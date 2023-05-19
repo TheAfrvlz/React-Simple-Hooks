@@ -54,6 +54,7 @@ function LittleApp() {
         <Route path="/Store" element={<Store />} />
         <Route path="/About" element={<About />} />
         <Route path="/Products/:Product" element={<Products/>}>
+          <Route index element={<h1>Welcom to the Product index</h1>} />
           <Route path="Info" element={<Info />} />
         </Route>
         <Route path="*" element={<Error />} />
